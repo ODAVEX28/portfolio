@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    flex-wrap: wrap;
+}
+nav{
+    border-bottom: 1px solid white;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+ul{
+    height: 70px;
+    width: 95%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    font-weight: bolder;
+    gap: 300px;
+}
+.home{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    border-bottom: 1px solid white;
+}
+.logo{
+    height: 50px;
+    width: 100px;
+    font-family: 'Tilt Prism', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+li a{
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+}
+li a:hover{
+    color: white;
+    transition: 1s;
+}
+.card{
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+.card h1{
+    font-size: 100px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+.pass{
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    animation: turn linear infinite 6s;
+}
+.name{
+    color: white;
+    animation: example linear infinite 6s;
+}
+.wee{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: relative;
+    animation: moove linear infinite 6s;
+}
+.webd{
+    color: yellow;
+    text-decoration: underline;
+}
+@keyframes turn{
+    100%{
+        /*transform: rotate(360deg);*/
+    }
+}
+@keyframes example {
+    0%   {color: white;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    75% {color: green;}
+    100% {color: white;}
+  }
+@keyframes moove {
+    0%   {background-color:white; left:0px; top:0px;}
+    20%  {background-color:yellow; left:600px; top:0px;}
+    40%  {background-color:blue; left:600px; top:500px;}
+    60%  {background-color:green; left:-600px; top:500px;}
+    80%  {background-color:red; left:-600px; top:0px;}
+    100% {background-color:white; left:0px; top:0px;}
+ }
